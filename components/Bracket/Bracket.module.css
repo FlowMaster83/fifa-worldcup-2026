@@ -1,9 +1,10 @@
 .wrapper {
   --match-h: 44px;
+  --match-w: 160px;
   --connector-w: 28px;
   --line-color: #999;
   overflow-x: auto;
-  padding: 24px 16px 40px;
+  padding: 24px 16px 96px;
 }
 
 .headerRow {
@@ -13,7 +14,7 @@
 }
 
 .headerCell {
-  width: 160px;
+  width: var(--match-w);
   flex: none;
   text-align: center;
   font-size: 13px;
@@ -22,7 +23,7 @@
 }
 
 .headerCell.withConnector {
-  width: calc(160px + var(--connector-w));
+  width: calc(var(--match-w) + var(--connector-w));
 }
 
 .bracket {
@@ -70,7 +71,7 @@
 }
 
 .match {
-  width: 160px;
+  width: var(--match-w);
   height: var(--match-h);
   flex: none;
   display: flex;
@@ -85,25 +86,64 @@
   flex: 1;
   display: flex;
   align-items: center;
-  padding: 0 8px;
-  font-size: 12px;
+  padding: 0 6px 0 8px;
 }
 
 .slot:first-child {
   border-bottom: 1px solid #ccc;
 }
 
-.championBox {
-  width: 160px;
-  height: var(--match-h);
+.team {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.score {
   flex: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #f5c518;
-  border-radius: 4px;
+  width: 18px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.75;
+  border-left: 1px solid #ccc;
+  margin-left: 6px;
+  padding-left: 6px;
+}
+
+.centerColumn {
+  position: relative;
+  flex: none;
+}
+
+.championLabel {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
   font-size: 13px;
   font-weight: bold;
+}
+
+.thirdPlace {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.thirdPlaceLabel {
+  font-size: 12px;
+  opacity: 0.7;
+  white-space: nowrap;
 }
 
 .note {
