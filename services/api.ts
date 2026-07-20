@@ -6,6 +6,7 @@ export interface Team {
   id: number;
   name: string;
   code: string;
+  iso: string;
   flag: string;
   confederation: string;
   group_id: string;

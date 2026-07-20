@@ -13,7 +13,7 @@ export default async function GroupPage({ groupId }: Props) {
       <ul>
         {teams.map((team: Team) => (
           <li key={team.id}>
-            {team.flag} {team.name}
+            <span className={`fi fi-${team.iso}`} /> {team.name}
           </li>
         ))}
       </ul>

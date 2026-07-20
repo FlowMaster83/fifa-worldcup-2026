@@ -4,6 +4,7 @@ const TeamSchema = new Schema({
   id: Number,
   name: String,
   code: String,
+  iso: String,
   flag: String,
   confederation: String,
   group_id: String,

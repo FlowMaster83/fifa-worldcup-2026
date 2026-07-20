@@ -4,7 +4,11 @@
     "name": "FIFA World Cup 2026",
     "edition": "23rd",
     "year": 2026,
-    "hosts": ["USA", "Canada", "Mexico"],
+    "hosts": [
+      "USA",
+      "Canada",
+      "Mexico"
+    ],
     "teams_count": 48,
     "groups_count": 12,
     "matches_count": 104,
@@ -20,74 +24,134 @@
       "id": "A",
       "name": "Group A",
       "host_city": "Mexico City / Zapopan, Mexico",
-      "teams": ["Mexico", "South Korea", "Czechia", "South Africa"]
+      "teams": [
+        "Mexico",
+        "South Korea",
+        "Czechia",
+        "South Africa"
+      ]
     },
     {
       "id": "B",
       "name": "Group B",
       "host_city": "Toronto, Canada",
-      "teams": ["Canada", "Switzerland", "Qatar", "Bosnia and Herzegovina"]
+      "teams": [
+        "Canada",
+        "Switzerland",
+        "Qatar",
+        "Bosnia and Herzegovina"
+      ]
     },
     {
       "id": "C",
       "name": "Group C",
       "host_city": "Various USA",
-      "teams": ["Brazil", "Morocco", "Scotland", "Haiti"]
+      "teams": [
+        "Brazil",
+        "Morocco",
+        "Scotland",
+        "Haiti"
+      ]
     },
     {
       "id": "D",
       "name": "Group D",
       "host_city": "Inglewood (Los Angeles), USA",
-      "teams": ["USA", "Australia", "Türkiye", "Paraguay"]
+      "teams": [
+        "USA",
+        "Australia",
+        "Türkiye",
+        "Paraguay"
+      ]
     },
     {
       "id": "E",
       "name": "Group E",
       "host_city": "Various USA",
-      "teams": ["Germany", "Ivory Coast", "Ecuador", "Curaçao"]
+      "teams": [
+        "Germany",
+        "Ivory Coast",
+        "Ecuador",
+        "Curaçao"
+      ]
     },
     {
       "id": "F",
       "name": "Group F",
       "host_city": "Various USA",
-      "teams": ["Netherlands", "Japan", "Sweden", "Tunisia"]
+      "teams": [
+        "Netherlands",
+        "Japan",
+        "Sweden",
+        "Tunisia"
+      ]
     },
     {
       "id": "G",
       "name": "Group G",
       "host_city": "Various USA",
-      "teams": ["Belgium", "Egypt", "Iran", "New Zealand"]
+      "teams": [
+        "Belgium",
+        "Egypt",
+        "Iran",
+        "New Zealand"
+      ]
     },
     {
       "id": "H",
       "name": "Group H",
       "host_city": "Various USA",
-      "teams": ["Spain", "Uruguay", "Saudi Arabia", "Cape Verde"]
+      "teams": [
+        "Spain",
+        "Uruguay",
+        "Saudi Arabia",
+        "Cape Verde"
+      ]
     },
     {
       "id": "I",
       "name": "Group I",
       "host_city": "Various USA",
-      "teams": ["France", "Senegal", "Norway", "Iraq"],
+      "teams": [
+        "France",
+        "Senegal",
+        "Norway",
+        "Iraq"
+      ],
       "note": "Group of Death"
     },
     {
       "id": "J",
       "name": "Group J",
       "host_city": "Various USA",
-      "teams": ["Argentina", "Austria", "Algeria", "Jordan"]
+      "teams": [
+        "Argentina",
+        "Austria",
+        "Algeria",
+        "Jordan"
+      ]
     },
     {
       "id": "K",
       "name": "Group K",
       "host_city": "Various USA",
-      "teams": ["Portugal", "DR Congo", "Uzbekistan", "Colombia"]
+      "teams": [
+        "Portugal",
+        "DR Congo",
+        "Uzbekistan",
+        "Colombia"
+      ]
     },
     {
       "id": "L",
       "name": "Group L",
       "host_city": "Various USA",
-      "teams": ["England", "Croatia", "Ghana", "Panama"]
+      "teams": [
+        "England",
+        "Croatia",
+        "Ghana",
+        "Panama"
+      ]
     }
   ],
   "teams": [
@@ -95,6 +159,7 @@
       "id": 1,
       "name": "Mexico",
       "code": "MEX",
+      "iso": "mx",
       "flag": "🇲🇽",
       "confederation": "CONCACAF",
       "group_id": "A",
@@ -112,6 +177,7 @@
       "id": 2,
       "name": "South Korea",
       "code": "KOR",
+      "iso": "kr",
       "flag": "🇰🇷",
       "confederation": "AFC",
       "group_id": "A",
@@ -129,6 +195,7 @@
       "id": 3,
       "name": "Czechia",
       "code": "CZE",
+      "iso": "cz",
       "flag": "🇨🇿",
       "confederation": "UEFA",
       "group_id": "A",
@@ -146,6 +213,7 @@
       "id": 4,
       "name": "South Africa",
       "code": "RSA",
+      "iso": "za",
       "flag": "🇿🇦",
       "confederation": "CAF",
       "group_id": "A",
@@ -163,6 +231,7 @@
       "id": 5,
       "name": "Canada",
       "code": "CAN",
+      "iso": "ca",
       "flag": "🇨🇦",
       "confederation": "CONCACAF",
       "group_id": "B",
@@ -180,6 +249,7 @@
       "id": 6,
       "name": "Switzerland",
       "code": "SUI",
+      "iso": "ch",
       "flag": "🇨🇭",
       "confederation": "UEFA",
       "group_id": "B",
@@ -197,6 +267,7 @@
       "id": 7,
       "name": "Qatar",
       "code": "QAT",
+      "iso": "qa",
       "flag": "🇶🇦",
       "confederation": "AFC",
       "group_id": "B",
@@ -214,6 +285,7 @@
       "id": 8,
       "name": "Bosnia and Herzegovina",
       "code": "BIH",
+      "iso": "ba",
       "flag": "🇧🇦",
       "confederation": "UEFA",
       "group_id": "B",
@@ -231,6 +303,7 @@
       "id": 9,
       "name": "Brazil",
       "code": "BRA",
+      "iso": "br",
       "flag": "🇧🇷",
       "confederation": "CONMEBOL",
       "group_id": "C",
@@ -248,6 +321,7 @@
       "id": 10,
       "name": "Morocco",
       "code": "MAR",
+      "iso": "ma",
       "flag": "🇲🇦",
       "confederation": "CAF",
       "group_id": "C",
@@ -265,6 +339,7 @@
       "id": 11,
       "name": "Scotland",
       "code": "SCO",
+      "iso": "gb-sct",
       "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "confederation": "UEFA",
       "group_id": "C",
@@ -282,6 +357,7 @@
       "id": 12,
       "name": "Haiti",
       "code": "HAI",
+      "iso": "ht",
       "flag": "🇭🇹",
       "confederation": "CONCACAF",
       "group_id": "C",
@@ -299,6 +375,7 @@
       "id": 13,
       "name": "USA",
       "code": "USA",
+      "iso": "us",
       "flag": "🇺🇸",
       "confederation": "CONCACAF",
       "group_id": "D",
@@ -316,6 +393,7 @@
       "id": 14,
       "name": "Australia",
       "code": "AUS",
+      "iso": "au",
       "flag": "🇦🇺",
       "confederation": "AFC",
       "group_id": "D",
@@ -333,6 +411,7 @@
       "id": 15,
       "name": "Türkiye",
       "code": "TUR",
+      "iso": "tr",
       "flag": "🇹🇷",
       "confederation": "UEFA",
       "group_id": "D",
@@ -350,6 +429,7 @@
       "id": 16,
       "name": "Paraguay",
       "code": "PAR",
+      "iso": "py",
       "flag": "🇵🇾",
       "confederation": "CONMEBOL",
       "group_id": "D",
@@ -367,6 +447,7 @@
       "id": 17,
       "name": "Germany",
       "code": "GER",
+      "iso": "de",
       "flag": "🇩🇪",
       "confederation": "UEFA",
       "group_id": "E",
@@ -384,6 +465,7 @@
       "id": 18,
       "name": "Ivory Coast",
       "code": "CIV",
+      "iso": "ci",
       "flag": "🇨🇮",
       "confederation": "CAF",
       "group_id": "E",
@@ -401,6 +483,7 @@
       "id": 19,
       "name": "Ecuador",
       "code": "ECU",
+      "iso": "ec",
       "flag": "🇪🇨",
       "confederation": "CONMEBOL",
       "group_id": "E",
@@ -418,6 +501,7 @@
       "id": 20,
       "name": "Curaçao",
       "code": "CUW",
+      "iso": "cw",
       "flag": "🇨🇼",
       "confederation": "CONCACAF",
       "group_id": "E",
@@ -436,6 +520,7 @@
       "id": 21,
       "name": "Netherlands",
       "code": "NED",
+      "iso": "nl",
       "flag": "🇳🇱",
       "confederation": "UEFA",
       "group_id": "F",
@@ -453,6 +538,7 @@
       "id": 22,
       "name": "Japan",
       "code": "JPN",
+      "iso": "jp",
       "flag": "🇯🇵",
       "confederation": "AFC",
       "group_id": "F",
@@ -470,6 +556,7 @@
       "id": 23,
       "name": "Sweden",
       "code": "SWE",
+      "iso": "se",
       "flag": "🇸🇪",
       "confederation": "UEFA",
       "group_id": "F",
@@ -487,6 +574,7 @@
       "id": 24,
       "name": "Tunisia",
       "code": "TUN",
+      "iso": "tn",
       "flag": "🇹🇳",
       "confederation": "CAF",
       "group_id": "F",
@@ -504,6 +592,7 @@
       "id": 25,
       "name": "Belgium",
       "code": "BEL",
+      "iso": "be",
       "flag": "🇧🇪",
       "confederation": "UEFA",
       "group_id": "G",
@@ -521,6 +610,7 @@
       "id": 26,
       "name": "Egypt",
       "code": "EGY",
+      "iso": "eg",
       "flag": "🇪🇬",
       "confederation": "CAF",
       "group_id": "G",
@@ -538,6 +628,7 @@
       "id": 27,
       "name": "Iran",
       "code": "IRN",
+      "iso": "ir",
       "flag": "🇮🇷",
       "confederation": "AFC",
       "group_id": "G",
@@ -555,6 +646,7 @@
       "id": 28,
       "name": "New Zealand",
       "code": "NZL",
+      "iso": "nz",
       "flag": "🇳🇿",
       "confederation": "OFC",
       "group_id": "G",
@@ -572,6 +664,7 @@
       "id": 29,
       "name": "Spain",
       "code": "ESP",
+      "iso": "es",
       "flag": "🇪🇸",
       "confederation": "UEFA",
       "group_id": "H",
@@ -589,6 +682,7 @@
       "id": 30,
       "name": "Uruguay",
       "code": "URU",
+      "iso": "uy",
       "flag": "🇺🇾",
       "confederation": "CONMEBOL",
       "group_id": "H",
@@ -606,6 +700,7 @@
       "id": 31,
       "name": "Saudi Arabia",
       "code": "KSA",
+      "iso": "sa",
       "flag": "🇸🇦",
       "confederation": "AFC",
       "group_id": "H",
@@ -623,6 +718,7 @@
       "id": 32,
       "name": "Cape Verde",
       "code": "CPV",
+      "iso": "cv",
       "flag": "🇨🇻",
       "confederation": "CAF",
       "group_id": "H",
@@ -640,6 +736,7 @@
       "id": 33,
       "name": "France",
       "code": "FRA",
+      "iso": "fr",
       "flag": "🇫🇷",
       "confederation": "UEFA",
       "group_id": "I",
@@ -657,6 +754,7 @@
       "id": 34,
       "name": "Senegal",
       "code": "SEN",
+      "iso": "sn",
       "flag": "🇸🇳",
       "confederation": "CAF",
       "group_id": "I",
@@ -674,6 +772,7 @@
       "id": 35,
       "name": "Norway",
       "code": "NOR",
+      "iso": "no",
       "flag": "🇳🇴",
       "confederation": "UEFA",
       "group_id": "I",
@@ -692,6 +791,7 @@
       "id": 36,
       "name": "Iraq",
       "code": "IRQ",
+      "iso": "iq",
       "flag": "🇮🇶",
       "confederation": "AFC",
       "group_id": "I",
@@ -710,6 +810,7 @@
       "id": 37,
       "name": "Argentina",
       "code": "ARG",
+      "iso": "ar",
       "flag": "🇦🇷",
       "confederation": "CONMEBOL",
       "group_id": "J",
@@ -728,6 +829,7 @@
       "id": 38,
       "name": "Austria",
       "code": "AUT",
+      "iso": "at",
       "flag": "🇦🇹",
       "confederation": "UEFA",
       "group_id": "J",
@@ -745,6 +847,7 @@
       "id": 39,
       "name": "Algeria",
       "code": "ALG",
+      "iso": "dz",
       "flag": "🇩🇿",
       "confederation": "CAF",
       "group_id": "J",
@@ -762,6 +865,7 @@
       "id": 40,
       "name": "Jordan",
       "code": "JOR",
+      "iso": "jo",
       "flag": "🇯🇴",
       "confederation": "AFC",
       "group_id": "J",
@@ -779,6 +883,7 @@
       "id": 41,
       "name": "Portugal",
       "code": "POR",
+      "iso": "pt",
       "flag": "🇵🇹",
       "confederation": "UEFA",
       "group_id": "K",
@@ -796,6 +901,7 @@
       "id": 42,
       "name": "DR Congo",
       "code": "COD",
+      "iso": "cd",
       "flag": "🇨🇩",
       "confederation": "CAF",
       "group_id": "K",
@@ -814,6 +920,7 @@
       "id": 43,
       "name": "Uzbekistan",
       "code": "UZB",
+      "iso": "uz",
       "flag": "🇺🇿",
       "confederation": "AFC",
       "group_id": "K",
@@ -831,6 +938,7 @@
       "id": 44,
       "name": "Colombia",
       "code": "COL",
+      "iso": "co",
       "flag": "🇨🇴",
       "confederation": "CONMEBOL",
       "group_id": "K",
@@ -848,6 +956,7 @@
       "id": 45,
       "name": "England",
       "code": "ENG",
+      "iso": "gb-eng",
       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "confederation": "UEFA",
       "group_id": "L",
@@ -865,6 +974,7 @@
       "id": 46,
       "name": "Croatia",
       "code": "CRO",
+      "iso": "hr",
       "flag": "🇭🇷",
       "confederation": "UEFA",
       "group_id": "L",
@@ -882,6 +992,7 @@
       "id": 47,
       "name": "Ghana",
       "code": "GHA",
+      "iso": "gh",
       "flag": "🇬🇭",
       "confederation": "CAF",
       "group_id": "L",
@@ -899,6 +1010,7 @@
       "id": 48,
       "name": "Panama",
       "code": "PAN",
+      "iso": "pa",
       "flag": "🇵🇦",
       "confederation": "CONCACAF",
       "group_id": "L",

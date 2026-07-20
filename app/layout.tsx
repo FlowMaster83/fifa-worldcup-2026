@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Iceberg } from "next/font/google";
 import "./globals.css";
+import "flag-icons/css/flag-icons.min.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
