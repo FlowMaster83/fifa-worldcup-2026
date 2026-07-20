@@ -14,6 +14,7 @@ const groups = [
   { label: "Group J", href: "/groupj" },
   { label: "Group K", href: "/groupk" },
   { label: "Group L", href: "/groupl" },
+  { label: "Best 3rd Place", href: "/third-place" },
 ];
 
 export default function Header() {

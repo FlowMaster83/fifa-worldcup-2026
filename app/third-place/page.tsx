@@ -1,21 +1,31 @@
-import { getTeamsByGroup } from "@/services/api";
+import { getAllTeams } from "@/services/api";
 import { byStandings, formatGoalDifference, goalDifference } from "@/lib/standings";
-import css from "./GroupPage.module.css";
+import css from "@/components/GroupPage/GroupPage.module.css";
 
-interface Props {
-  groupId: string;
-}
+const ADVANCING_COUNT = 8;
 
-export default async function GroupPage({ groupId }: Props) {
-  const teams = await getTeamsByGroup(groupId);
-  const standings = [...teams].sort(byStandings);
+export default async function ThirdPlacePage() {
+  const teams = await getAllTeams();
+
+  const groupIds = [...new Set(teams.map((team) => team.group_id))].sort();
+  const thirdPlaced = groupIds
+    .map((groupId) => {
+      const groupStandings = teams
+        .filter((team) => team.group_id === groupId)
+        .sort(byStandings);
+      return groupStandings[2];
+    })
+    .filter((team) => team !== undefined)
+    .sort(byStandings);
 
   return (
     <div>
-      <h1>Group {groupId}</h1>
+      <h1>Best Third-Placed Teams</h1>
       <table className={css.table}>
         <thead>
           <tr>
+            <th>#</th>
+            <th>Group</th>
             <th className={css.teamCell}>Team</th>
             <th>P</th>
             <th>W</th>
@@ -27,8 +37,13 @@ export default async function GroupPage({ groupId }: Props) {
           </tr>
         </thead>
         <tbody>
-          {standings.map((team) => (
-            <tr key={team.id}>
+          {thirdPlaced.map((team, index) => (
+            <tr
+              key={team.id}
+              className={index < ADVANCING_COUNT ? css.qualifies : undefined}
+            >
+              <td>{index + 1}</td>
+              <td>{team.group_id}</td>
               <td className={css.teamCell}>
                 <span className={css.team}>
                   <span className={`fi fi-${team.iso}`} />

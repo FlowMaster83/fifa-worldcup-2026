@@ -28,7 +28,12 @@ export interface Team {
   qualified_via: string;
 }
 
-export async function getTeamsByGroup(groupId: string) {
+export async function getTeamsByGroup(groupId: string): Promise<Team[]> {
   const res = await axios.get(`${BASE_URL}/api/teams?group_id=${groupId}`);
+  return res.data;
+}
+
+export async function getAllTeams(): Promise<Team[]> {
+  const res = await axios.get(`${BASE_URL}/api/teams`);
   return res.data;
 }
