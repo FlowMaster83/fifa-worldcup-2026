@@ -1,4 +1,5 @@
 import Link from "next/link";
+import css from "./Header.module.css";
 
 const groups = [
   { label: "Group A", href: "/groupa" },
@@ -17,7 +18,7 @@ const groups = [
 
 export default function Header() {
   return (
-    <header>
+    <header className={css.header}>
       {groups.map((group) => (
         <Link key={group.href} href={group.href}>
           {group.label}
