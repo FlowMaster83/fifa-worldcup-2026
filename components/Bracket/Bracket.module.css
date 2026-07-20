@@ -74,6 +74,19 @@
   background: var(--line-color);
 }
 
+/* Mirrored half: pairChildren sits to the right of the connector, so the
+   joining vertical line must sit on the right edge instead of the left. */
+.connectorReverse::before {
+  left: auto;
+  right: 0;
+}
+
+/* A 1-to-1 link (e.g. Semi-final to Final) needs only the straight
+   horizontal line, never the pair-joining vertical line. */
+.connectorStraight::before {
+  content: none;
+}
+
 .match {
   width: var(--match-w);
   height: var(--match-h);

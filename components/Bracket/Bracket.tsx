@@ -34,7 +34,9 @@ function BracketNode({ round, reverse = false }: { round: number; reverse?: bool
       <BracketNode round={round - 1} reverse={reverse} />
     </div>
   );
-  const connector = <div className={css.connector} />;
+  const connector = (
+    <div className={reverse ? `${css.connector} ${css.connectorReverse}` : css.connector} />
+  );
 
   return (
     <div className={css.pair}>
@@ -70,7 +72,7 @@ export default function Bracket() {
       </div>
       <div className={css.bracket}>
         <BracketNode round={HALF_ROUNDS} />
-        <div className={css.connector} />
+        <div className={`${css.connector} ${css.connectorStraight}`} />
         <div className={css.centerColumn}>
           <div className={css.championLabel}>🏆 Champion</div>
           <Match />
@@ -79,7 +81,7 @@ export default function Bracket() {
             <Match />
           </div>
         </div>
-        <div className={css.connector} />
+        <div className={`${css.connector} ${css.connectorStraight}`} />
         <BracketNode round={HALF_ROUNDS} reverse />
       </div>
       <p className={css.note}>
