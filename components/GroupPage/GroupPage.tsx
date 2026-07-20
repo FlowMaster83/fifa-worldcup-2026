@@ -24,13 +24,13 @@ export default async function GroupPage({ groupId }: Props) {
       <table className={css.table}>
         <thead>
           <tr>
-            <th className={css.teamCell}>Команда</th>
-            <th>І</th>
-            <th>В</th>
-            <th>Н</th>
-            <th>П</th>
+            <th className={css.teamCell}>Team</th>
+            <th>P</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
             <th>+/-</th>
-            <th>О</th>
+            <th>Pts</th>
           </tr>
         </thead>
         <tbody>
