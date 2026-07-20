@@ -23,6 +23,10 @@
   text-align: left;
 }
 
+.advances {
+  background-color: rgba(0, 90, 200, 0.15);
+}
+
 .qualifies {
   background-color: rgba(0, 128, 0, 0.15);
 }

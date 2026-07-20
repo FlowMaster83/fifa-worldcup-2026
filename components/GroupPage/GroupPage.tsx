@@ -27,8 +27,13 @@ export default async function GroupPage({ groupId }: Props) {
           </tr>
         </thead>
         <tbody>
-          {standings.map((team) => (
-            <tr key={team.id}>
+          {standings.map((team, index) => (
+            <tr
+              key={team.id}
+              className={
+                index < 2 ? css.advances : index === 2 ? css.qualifies : undefined
+              }
+            >
               <td className={css.teamCell}>
                 <span className={css.team}>
                   <span className={`fi fi-${team.iso}`} />
