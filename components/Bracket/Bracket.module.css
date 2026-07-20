@@ -9,8 +9,9 @@
 
 .headerRow {
   display: flex;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   min-width: max-content;
+  width: max-content;
 }
 
 .headerCell {
@@ -29,7 +30,9 @@
 .bracket {
   display: flex;
   align-items: center;
+  margin: 0 auto;
   min-width: max-content;
+  width: max-content;
 }
 
 .pair {

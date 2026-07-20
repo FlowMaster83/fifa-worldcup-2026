@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+  padding: 16px 0;
+}
+
 @media (prefers-color-scheme: green) {
   html {
     color-scheme: green;
