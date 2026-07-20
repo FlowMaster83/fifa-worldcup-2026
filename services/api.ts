@@ -11,6 +11,13 @@ export interface Team {
   confederation: string;
   group_id: string;
   pot: number;
+  played: number;
+  wins: number;
+  draws: number;
+  losses: number;
+  goals_for: number;
+  goals_against: number;
+  points: number;
   fifa_ranking_nov2025: number;
   is_host: boolean;
   is_debut: boolean;
