@@ -29,7 +29,7 @@ export default async function GroupPage({ groupId }: Props) {
             <th>В</th>
             <th>Н</th>
             <th>П</th>
-            <th>М&apos;ячі</th>
+            <th>+/-</th>
             <th>О</th>
           </tr>
         </thead>
