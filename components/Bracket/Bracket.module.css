@@ -1,0 +1,114 @@
+.wrapper {
+  --match-h: 44px;
+  --connector-w: 28px;
+  --line-color: #999;
+  overflow-x: auto;
+  padding: 24px 16px 40px;
+}
+
+.headerRow {
+  display: flex;
+  margin-bottom: 16px;
+  min-width: max-content;
+}
+
+.headerCell {
+  width: 160px;
+  flex: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.headerCell.withConnector {
+  width: calc(160px + var(--connector-w));
+}
+
+.bracket {
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+}
+
+.pairChildren {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.connector {
+  width: var(--connector-w);
+  align-self: stretch;
+  position: relative;
+  flex: none;
+}
+
+.connector::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--match-h) / 2);
+  bottom: calc(var(--match-h) / 2);
+  left: 0;
+  width: 1px;
+  background: var(--line-color);
+}
+
+.connector::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--line-color);
+}
+
+.match {
+  width: 160px;
+  height: var(--match-h);
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--background) 92%, transparent);
+}
+
+.slot {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.slot:first-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.championBox {
+  width: 160px;
+  height: var(--match-h);
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f5c518;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.note {
+  margin-top: 16px;
+  font-size: 13px;
+  opacity: 0.7;
+  font-style: italic;
+}
