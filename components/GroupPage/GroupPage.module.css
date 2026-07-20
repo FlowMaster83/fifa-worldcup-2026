@@ -24,9 +24,21 @@
 }
 
 .advances {
-  background-color: rgba(0, 90, 200, 0.15);
+  background-color: rgba(34, 197, 94, 0.18);
+}
+
+.advances td:first-child {
+  border-left: 4px solid #22c55e;
+}
+
+.advances .team {
+  font-weight: bold;
 }
 
 .qualifies {
-  background-color: rgba(0, 128, 0, 0.15);
+  background-color: rgba(245, 158, 11, 0.18);
+}
+
+.qualifies td:first-child {
+  border-left: 4px solid #f59e0b;
 }
