@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = "http://localhost:3000";
 
 export interface Team {
   id: number;
@@ -21,8 +21,6 @@ export interface Team {
 }
 
 export async function getTeamsByGroup(groupId: string) {
-  const res = await axios.get(`${BASE_URL}/teams?group_id=${groupId}`);
-
-  console.log(res.data);
+  const res = await axios.get(`${BASE_URL}/api/teams?group_id=${groupId}`);
   return res.data;
 }
